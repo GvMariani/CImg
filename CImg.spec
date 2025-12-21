@@ -13,6 +13,7 @@ URL:		https://cimg.eu/
 License:	CeCiLLv2
 Group:		Graphics/Utilities
 
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libjpeg)
