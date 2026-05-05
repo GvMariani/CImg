@@ -1,0 +1,6 @@
+# Examle programs do not have man page
+addFilter("W: no-manual-page-for-binary")
+
+# Images are not text files
+addFilter("W: file-not-utf8")
+addFilter("W: wrong-file-end-of-line-encoding")
