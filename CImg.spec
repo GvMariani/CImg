@@ -4,14 +4,13 @@
 
 Summary:	Tools for advanced image processing
 Name:		cimg
-Version:		3.7.5
+Version:		3.7.6
 Release:		1
 License:		CeCILL
 Group:	Graphics/Utilities
 Url:		https://cimg.eu/
 Source0:	https://cimg.eu/files/%{oname}_%{version}.zip
 Source100:	cimg.rpmlintrc
-#Patch0:	cimg-2.4.2-arm.patch
 BuildRequires:		doxygen
 BuildRequires:		make
 BuildRequires:		gomp-devel
@@ -34,7 +33,7 @@ BuildRequires:		pkgconfig(zlib)
 %description
 Advanced image manipulation algorithms, including the GREYCSTORATION image
 regularization algorithm which is mainly used for removing image noise.
-This package contains example tools based on the CImg library.
+This package contains example tools based on the CImg source library.
 
 %files
 %{_bindir}/*
