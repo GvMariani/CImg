@@ -1,4 +1,4 @@
-# Examle programs do not have man page
+# Example programs do not have man pages
 addFilter("W: no-manual-page-for-binary")
 
 # Images are not text files

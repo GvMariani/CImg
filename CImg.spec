@@ -4,7 +4,7 @@
 
 Summary:	Tools for advanced image processing
 Name:		cimg
-Version:		3.7.6
+Version:		4.0.3
 Release:		1
 License:		CeCILL
 Group:	Graphics/Utilities
@@ -52,7 +52,8 @@ Note that this package doe not contain a dynamic library. The whole library
 code is in the CImg.h file which is in this package.
 
 %files devel
-%doc README.txt Licence_CeCILL* examples
+%license Licence_CeCILL*
+%doc README.txt examples
 %doc resources/%{oname}_reference.pdf
 %{_includedir}/%{oname}*
 
@@ -74,6 +75,7 @@ popd
 
 %install
 mkdir -p %{buildroot}%{_bindir}
+# We need move them rhater than installing to avoid later rpmlint errors
 pushd examples
 	mv captcha %{buildroot}%{_bindir}
 	mv CImg_demo %{buildroot}%{_bindir}
@@ -94,7 +96,6 @@ pushd examples
 	mv pde_heatflow2d %{buildroot}%{_bindir}
 	mv pde_TschumperleDeriche2d %{buildroot}%{_bindir}
 	mv plotter1d %{buildroot}%{_bindir}
-	mv radon_transform2d %{buildroot}%{_bindir}
 	mv scene3d %{buildroot}%{_bindir}
 	mv spherical_function3d %{buildroot}%{_bindir}
 	mv tetris %{buildroot}%{_bindir}
